@@ -1,7 +1,7 @@
-[![NPM version](https://img.shields.io/npm/v/istanbul-azure-reporter.svg?logo=npm)](https://www.npmjs.com/package/@reactway/dropdown)
+[![NPM version](https://img.shields.io/npm/v/istanbul-azure-reporter.svg?logo=npm)](https://www.npmjs.com/package/istanbul-azure-reporter)
 [![Build Status](https://img.shields.io/azure-devops/build/reactway/reactway/2/master.svg?logo=azuredevops)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=2)
-[![Dependencies](https://img.shields.io/david/istanbul-azure-reporter.svg)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=2)
-[![Dev dependencies](https://img.shields.io/david/dev/istanbul-azure-reporter.svg)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=2)
+[![Dependencies](https://img.shields.io/david/reactway/istanbul-azure-reporter.svg)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=2)
+[![Dev dependencies](https://img.shields.io/david/dev/reactway/istanbul-azure-reporter.svg)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=2)
 
 # istanbul-azure-reporter
 
