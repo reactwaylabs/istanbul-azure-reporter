@@ -16,7 +16,7 @@
         padding: 1rem;
 
         .breadcrumbs {
-            > *:not(:last-child) {
+            > .item:not(:last-child) {
                 padding-right: 0.5rem;
             }
         }
@@ -40,7 +40,7 @@
                     color: #7f7f7f;
                 }
 
-                > *:not(:last-child) {
+                > span:not(:last-child) {
                     margin-right: 0.25rem;
                 }
             }

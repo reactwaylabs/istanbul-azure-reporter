@@ -9,7 +9,7 @@ Code coverage HTML reporter with Azure DevOps limitations in mind.
 
 Based on istanbuljs `html` built-in [reporter](https://github.com/istanbuljs/istanbuljs/tree/master/packages/istanbul-reports/lib/html).
 
-![Screenshot](assets/reporter.jpg)
+![image](https://user-images.githubusercontent.com/562658/53685980-5f66bc80-3d2a-11e9-9081-603e32b956a0.png)
 
 ## License
 

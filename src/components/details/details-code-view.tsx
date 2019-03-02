@@ -128,7 +128,7 @@ export function DetailsCodeView(props: Props): JSX.Element {
     let hitCountLines: JSX.Element[] = [];
     for (let line = 1; line <= linesCount; line++) {
         lines.push(
-            <div key={`line-${line}`} className="code-line" id={`L${line}`}>
+            <div key={`line-${line}`} className="line" id={`L${line}`}>
                 <a href={`#L${line}`}>{line}</a>
             </div>
         );

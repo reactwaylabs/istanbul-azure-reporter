@@ -26,19 +26,23 @@ function BreadCrumbs(props: { breadcrumbs: Link[] }): JSX.Element {
             .map(breadcrumb => {
                 if (breadcrumb.url != null) {
                     return (
-                        <a key={`link-${breadcrumb.url}`} href={breadcrumb.url}>
+                        <a key={`link-${breadcrumb.url}`} href={breadcrumb.url} className="item">
                             {breadcrumb.name}
                         </a>
                     );
                 } else {
-                    return <span key={`link-${breadcrumb.url}`}>{breadcrumb.name}</span>;
+                    return (
+                        <span key={`link-${breadcrumb.url}`} className="item">
+                            {breadcrumb.name}
+                        </span>
+                    );
                 }
             })
             .reduce<JSX.Element[]>((arr, item, currentIndex) => {
                 if (currentIndex != props.breadcrumbs.length - 1) {
                     return arr.concat(
                         item,
-                        <span key={`sep-${currentIndex}`} className="sep">
+                        <span key={`sep-${currentIndex}`} className="item sep">
                             /
                         </span>
                     );
@@ -50,7 +54,7 @@ function BreadCrumbs(props: { breadcrumbs: Link[] }): JSX.Element {
         links = <span key="root">All files</span>;
     }
 
-    return <h4 className="breadcrumbs">{links}</h4>;
+    return <h5 className="breadcrumbs">{links}</h5>;
 }
 
 interface Props {

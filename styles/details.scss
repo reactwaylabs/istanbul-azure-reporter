@@ -1,3 +1,7 @@
+$line-color-covered: #e6f5d0;
+$line-color-not-covered: #fccccc;
+$line-color-dark-not-covered: #fcdfdf;
+
 .coverage {
     display: flex;
     flex-flow: row;
@@ -15,11 +19,11 @@
 
         > tr {
             .code-lines-container {
-                .code-line {
+                .line {
                     text-align: right;
 
                     > a {
-                        color: rgb(0, 116, 217);
+                        color: #0074d9;
                         width: 100%;
                         text-decoration: none;
 
@@ -30,28 +34,42 @@
                 }
             }
 
-            .code-hit-counter > * {
-                text-align: right;
-                background-color: lightgrey;
-                padding: 0 0.25rem;
+            .code-hit-counter {
+                .line {
+                    text-align: right;
+                    background-color: lightgrey;
+                    padding: 0 0.25rem;
+
+                    &.covered {
+                        background-color: $line-color-covered;
+                    }
+
+                    &.not-covered {
+                        background-color: $line-color-not-covered;
+                    }
+                }
             }
 
             .code-container {
-                white-space: pre;
+                display: flex;
+                flex-flow: column;
                 padding-left: 0;
+
+                .line {
+                    white-space: pre;
+
+                    &.not-covered {
+                        background-color: $line-color-not-covered;
+                    }
+
+                    .not-covered {
+                        background-color: $line-color-dark-not-covered;
+                    }
+                }
             }
 
-            // Highlighting for lines.
-            .not-covered {
-                background-color: #fccccc;
-            }
-
-            .line.not-covered {
-                background-color: #fcdfdf;
-            }
-
-            .covered {
-                background-color: rgb(230, 245, 208);
+            .line {
+                height: 19px;
             }
         }
     }

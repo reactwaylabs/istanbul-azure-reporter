@@ -1,6 +1,6 @@
 {
     "name": "istanbul-azure-reporter",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Code coverage HTML reporter with Azure DevOps limitations in mind",
     "main": "dist/index.js",
     "scripts": {
@@ -20,6 +20,9 @@
     ],
     "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
     "license": "MIT",
+    "bugs": "https://github.com/ReactWay/istanbul-azure-reporter/issues",
+    "repository": "reactway/istanbul-azure-reporter",
+    "homepage": "https://github.com/ReactWay/istanbul-azure-reporter",
     "devDependencies": {
         "@types/classnames": "^2.2.7",
         "@types/istanbul-lib-report": "^1.1.0",
