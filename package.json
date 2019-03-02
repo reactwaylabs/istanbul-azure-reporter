@@ -50,7 +50,8 @@
     },
     "files": [
         "dist",
-        "**/*.md"
+        "**/*.md",
+        "assets"
     ],
     "jest": {
         "verbose": true,
