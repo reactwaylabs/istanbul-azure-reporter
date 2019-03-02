@@ -8,8 +8,10 @@
             border-bottom: 0;
 
             td {
-                &:not(:last-child) {
-                    border-right: 1px solid lightgrey;
+                border-right: 1px solid lightgrey;
+
+                &:last-child {
+                    border-right: none;
                 }
 
                 &.low {

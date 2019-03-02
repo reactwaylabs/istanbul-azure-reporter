@@ -16,8 +16,8 @@
         padding: 1rem;
 
         .breadcrumbs {
-            > .item:not(:last-child) {
-                padding-right: 0.5rem;
+            .item {
+                padding-right: 0.25rem;
             }
         }
 
@@ -26,10 +26,7 @@
 
             .item {
                 font-size: 0.8rem;
-
-                &:not(:last-child) {
-                    margin-right: 1rem;
-                }
+                margin-right: 1rem;
 
                 .pct {
                     font-weight: bold;
@@ -40,7 +37,7 @@
                     color: #7f7f7f;
                 }
 
-                > span:not(:last-child) {
+                > span {
                     margin-right: 0.25rem;
                 }
             }
