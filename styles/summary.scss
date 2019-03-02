@@ -1,0 +1,66 @@
+@import "./config";
+
+.coverage-summary {
+    margin: 0;
+
+    tbody {
+        tr {
+            border-bottom: 0;
+
+            td {
+                &:not(:last-child) {
+                    border-right: 1px solid lightgrey;
+                }
+
+                &.low {
+                    background-color: $coverage-low-color-light;
+                }
+                &.medium {
+                    background-color: $coverage-medium-color-light;
+                }
+                &.high {
+                    background-color: $coverage-high-color-light;
+                }
+            }
+        }
+    }
+}
+
+.chart {
+    min-width: 7.5rem;
+    border: 1px solid lightgrey;
+
+    .cover-fill {
+        display: inline-block;
+        height: 0.75rem;
+    }
+
+    .cover-empty {
+        display: inline-block;
+        height: 0.75rem;
+        background-color: white;
+    }
+
+    &.low {
+        border-color: $coverage-low-color-dark;
+
+        .cover-fill {
+            background-color: $coverage-low-color-dark;
+        }
+    }
+
+    &.medium {
+        border-color: $coverage-medium-color-dark;
+        .cover-fill {
+            background-color: $coverage-medium-color-dark;
+        }
+    }
+
+    &.high {
+        border-color: $coverage-high-color-dark;
+
+        .cover-fill {
+            background-color: $coverage-high-color-dark;
+        }
+    }
+}

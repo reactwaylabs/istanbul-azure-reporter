@@ -1,0 +1,13 @@
+$coverage-low-color-dark: #c21f39;
+$coverage-medium-color-dark: #666;
+$coverage-high-color-dark: #4d9221;
+
+$coverage-low-color-light: lighten($coverage-low-color-dark, 50);
+$coverage-medium-color-light: lighten($coverage-medium-color-dark, 50);
+$coverage-high-color-light: lighten($coverage-high-color-dark, 50);
+
+$label-palette: (
+    grey: #e8e8e8
+);
+$label-color-alt: #555;
+$label-padding: 0.25rem 0.3125rem;

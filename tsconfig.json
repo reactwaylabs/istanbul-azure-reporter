@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": { "*": ["types/*"] },
+        "module": "commonjs",
+        "target": "es5",
+        "outDir": "dist",
+        "rootDir": "src",
+        "jsx": "react",
+        "noUnusedLocals": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "experimentalDecorators": true,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "plugins": [
+            {
+                "name": "tslint-language-service",
+                "alwaysShowRuleFailuresAsWarnings": true,
+                "ignoreDefinitionFiles": true
+            }
+        ]
+    },
+    "exclude": ["__tests__", "dist"]
+}

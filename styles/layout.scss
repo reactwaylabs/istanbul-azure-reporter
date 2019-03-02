@@ -1,0 +1,76 @@
+@import "./utils/reset";
+@import "../node_modules/foundation-sites/scss/foundation";
+@import "./config";
+
+@include foundation-global-styles;
+@include foundation-typography;
+
+@include foundation-table;
+@include foundation-label;
+
+.layout {
+    display: flex;
+    flex-flow: column;
+
+    > .header {
+        padding: 1rem;
+
+        .breadcrumbs {
+            > *:not(:last-child) {
+                padding-right: 0.5rem;
+            }
+        }
+
+        .overall-coverage {
+            display: flex;
+
+            .item {
+                font-size: 0.8rem;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+                .pct {
+                    font-weight: bold;
+                    color: black;
+                }
+
+                .name {
+                    color: #7f7f7f;
+                }
+
+                > *:not(:last-child) {
+                    margin-right: 0.25rem;
+                }
+            }
+        }
+    }
+
+    > .coverage-line {
+        width: 100%;
+        height: 0.75rem;
+
+        &.low {
+            background-color: $coverage-low-color-dark;
+        }
+        &.medium {
+            background-color: $coverage-medium-color-dark;
+        }
+        &.high {
+            background-color: $coverage-high-color-dark;
+        }
+    }
+
+    > .content {
+        display: flex;
+        padding: 1rem;
+    }
+
+    > .footer {
+        color: #7f7f7f;
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 0.75rem;
+    }
+}

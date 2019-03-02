@@ -1,0 +1,59 @@
+{
+    "name": "istanbul-azure-reporter",
+    "version": "0.1.0",
+    "description": "Code coverage HTML reporter with Azure DevOps limitations in mind",
+    "main": "dist/index.js",
+    "scripts": {
+        "build:code": "tsc -p .",
+        "watch:code": "tsc -p . -w",
+        "build:styles": "node-sass styles/ -o dist/styles --output-style compressed",
+        "watch:styles": "npm run build:styles && node-sass styles/ -o dist/styles --output-style compressed -w",
+        "build": "run-s build:code build:styles",
+        "watch": "run-p watch:code watch:styles",
+        "test": "jest"
+    },
+    "keywords": [
+        "coverage",
+        "reporter",
+        "istanbul",
+        "azure"
+    ],
+    "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/classnames": "^2.2.7",
+        "@types/istanbul-lib-report": "^1.1.0",
+        "@types/jest": "^24.0.9",
+        "@types/lowlight": "0.0.0",
+        "@types/node": "^11.9.5",
+        "@types/react": "^16.8.5",
+        "@types/react-dom": "^16.8.2",
+        "@types/unist": "^2.0.3",
+        "foundation-sites": "^6.5.3",
+        "jest": "^24.1.0",
+        "node-sass": "^4.11.0",
+        "npm-run-all": "^4.1.5",
+        "ts-jest": "^24.0.0",
+        "typescript": "^3.3.3333"
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "istanbul-lib-report": "^2.0.4",
+        "lowlight": "^1.11.0",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3",
+        "rehype-react": "^3.1.0",
+        "tslib": "^1.9.3",
+        "unified": "^7.1.0",
+        "unist-util-visit": "^1.4.0"
+    },
+    "files": [
+        "dist",
+        "**/*.md"
+    ],
+    "jest": {
+        "verbose": true,
+        "preset": "ts-jest",
+        "testRegex": "/__tests__/.*\\.(test|spec).(ts|tsx)$"
+    }
+}

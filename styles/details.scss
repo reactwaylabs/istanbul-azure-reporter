@@ -1,0 +1,58 @@
+.coverage {
+    display: flex;
+    flex-flow: row;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 1.1875rem;
+    font-size: 1rem;
+    margin: 0;
+
+    border: 1px solid #f1f1f1;
+    background-color: #fefefe;
+
+    > tbody {
+        border: none;
+        background-color: initial;
+
+        > tr {
+            .code-lines-container {
+                .code-line {
+                    text-align: right;
+
+                    > a {
+                        color: rgb(0, 116, 217);
+                        width: 100%;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .code-hit-counter > * {
+                text-align: right;
+                background-color: lightgrey;
+                padding: 0 0.25rem;
+            }
+
+            .code-container {
+                white-space: pre;
+                padding-left: 0;
+            }
+
+            // Highlighting for lines.
+            .not-covered {
+                background-color: #fccccc;
+            }
+
+            .line.not-covered {
+                background-color: #fcdfdf;
+            }
+
+            .covered {
+                background-color: rgb(230, 245, 208);
+            }
+        }
+    }
+}
